@@ -1,9 +1,27 @@
 ## Installation setup
 
-Fetch git respo.
+create a folder open that directory in vscode by write in directory
 
 ```bash
-  git clone --fetch-all https://github.com/atal98/assignment.git
+  cmd
+
+  -- in terminal
+  code .
+```
+
+vscode will write in terminal to fetch git clone
+
+```bash
+  git clone https://github.com/atal98/assignment.git
+```
+
+write in that vscose termial
+
+```bash
+  cd .\assignment\
+
+  -- open that directory in vscode terminal
+  code.
 ```
 
 create python enviroment
@@ -12,7 +30,8 @@ create python enviroment
   python -m venv {your_env_name}
 ```
 
-create a db in postgresql and create name .env file and put your creds in that file
+create a db in postgresql and create name .env file and put your creds in that main assigment folder
+
 ![](/img/img1.png)
 
 ```bash
