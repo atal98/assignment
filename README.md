@@ -30,7 +30,7 @@ create python enviroment
   python -m venv {your_env_name}
 ```
 
-create a db in postgresql
+create a db in postgresql and add that creds in django setting.py file
 
 ```bash
   DATABASES = {
