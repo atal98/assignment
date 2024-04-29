@@ -30,17 +30,19 @@ create python enviroment
   python -m venv {your_env_name}
 ```
 
-create a db in postgresql and create name .env file and put your creds in that main assigment folder
-
-![](/img/img1.png)
+create a db in postgresql
 
 ```bash
-  DB_ENGINE=django.db.backends.postgresql
-  DB_NAME={your_db_name}
-  DB_USER=postgres
-  DB_PASSWORD={your_password}
-  DB_HOST=localhost
-  DB_PORT=5432
+  DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'name_of_your_db',
+        'USER': 'name_of_your_user',
+        'PASSWORD': 'name_of_your_password',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 ```
 
 Activate your env
@@ -76,7 +78,7 @@ Create superuser for to create authentication and Tokenization
 Generate token for that user
 
 ```bash
-  python manage.py drf_crate_token admin
+  python manage.py drf_create_token admin
 ```
 
 Start server
