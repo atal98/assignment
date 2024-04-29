@@ -1,4 +1,12 @@
 # Ignore all files in a directory
 vendorenv/
 .env
-vendorconfig/__pycache__/
+/api/migrations/__pycache__/
+/api/__pycache__/
+/vendor_models/migrations/0003_alter_purchaseorder_po_number.py 
+/vendor_models/migrations/0002_alter_purchaseorder_issue_date.py
+/vendor_models/migrations/0002_initial.py
+/vendor_models/migrations/0001_initial.py
+/vendor_models/migrations/__pycache__
+/vendor_models/__pycache__
+/vendorconfig/__pycache__

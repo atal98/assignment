@@ -87,6 +87,8 @@ Start server
   python manage.py runserver
 ```
 
+## Testing API
+
 To test any api first fetch generated token by hit this url
 
 ```bash
@@ -96,3 +98,51 @@ To test any api first fetch generated token by hit this url
 Open postman go to header and put there
 
 ![](/img/img2.png)
+
+First need to create vendor profile
+
+```bash
+  http://localhost:8000/api/vendors/
+```
+
+![](/img/img3.png)
+
+Then create PO
+
+```bash
+  http://localhost:8000/api/purchase_orders/
+```
+
+![](/img/img4.png)
+
+acknowlage the PO
+
+```bash
+  http://localhost:8000/api/purchase_orders/1/acknowledge/
+```
+
+![](/img/img5.png)
+
+check the vendor get update or not as Signals are create whenever PO update or delete
+
+```bash
+  http://localhost:8000/api/vendors/
+```
+
+![](/img/img6.png)
+
+update the PO status to complete
+
+```bash
+  http://localhost:8000/api/purchase_orders/1/
+```
+
+![](/img/img7.png)
+
+As the result beacuse of the signals created it update dynamically
+
+```bash
+  http://localhost:8000/api/vendors/
+```
+
+![](/img/img8.png)
